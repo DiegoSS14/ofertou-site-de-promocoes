@@ -1,0 +1,11 @@
+:root {
+  font-family: Epilogue, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body{
+  background-color: #F4FAF6;
+
+  --green-primary: #40B560;
+    --white: #fff;
+    --yellow: rgb(207, 235, 49);
+}

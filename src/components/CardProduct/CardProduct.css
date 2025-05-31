@@ -1,0 +1,90 @@
+.img{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.card-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+    gap: 14px;
+}
+
+.container-variants{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.area-tags{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 2px;
+}
+
+.area-tags div{
+    display: flex;
+    border: 1px solid #239D45;
+    padding: 6px 8px 4px 8px;
+    border-radius: 20px;
+}
+
+.area-tags div p{
+    color: #239D45;
+    font-size: 12px;
+}
+
+.area-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area-value{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.area-value h2{
+    font-size: 30px !important;
+}
+
+.area-price p{
+    font-size: 14px !important;
+    opacity: 0.8;
+}
+
+.container-info button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 35px; 
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+    background-color: #40B560;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.container-info button:hover{
+    background-color: #239D45;
+}
