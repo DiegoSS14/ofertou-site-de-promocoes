@@ -19,6 +19,5 @@ Como é um projeto pessoal e ainda estou aprendendo React, busquei criar uma int
 
 ## Home Page
 
-Estou atualmente desenvolvendo a página Home do site. Ainda está em processo de criação, mas já implementei a API de produtos e estou criando a lógica que distribui esses produtos em arrays por categorias.
-
-![Interface do projeto](https://github.com/user-attachments/assets/04c53be7-6ee8-4f53-ba15-5a782eec21dd)
+Acabo de terminar a página Home com uma lógica que divide os produtos por categoria e exibe cada um em sua respectiva categoria e com botão de favorito nos cards, o próximo passo é implementar a lista de favoritos, a tela de exibição do produto, o sistema de listas e também o sistema de busca por nome.
+![image](https://github.com/user-attachments/assets/8b227151-c94e-4ed9-8dca-2dffd6348e65)
