@@ -1,12 +1,14 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./CardProduct.css"
+import { useNavigate } from "react-router-dom"
 
-function CardProduct({ tags, titulo, valor, desconto, img}) {
-
+function CardProduct({ tags, titulo, valor, desconto, img, onToggleFavorite, isFavorited, id}) {
+    
     const [favorited, setFavorited] = useState(false);
+    const navigate = useNavigate();
 
-    function toggleFavorite() {
-        setFavorited(!favorited)
+    function handleClick() {
+        navigate(`/product/${id}`)
     }
 
     return (
@@ -14,8 +16,9 @@ function CardProduct({ tags, titulo, valor, desconto, img}) {
             <img src={img} alt={titulo} className="img"/>
             <div className="container-info">
                 <div 
-                className={`fav-button ${favorited ? "favorited-button": ""}`}
-                onClick={toggleFavorite}></div>
+                className={`fav-button ${isFavorited ? "favorited-button": ""}`}
+                onClick={onToggleFavorite}>
+                </div>
 
                 <div className="container-variants">
                     <div className="area-tags">
@@ -36,11 +39,11 @@ function CardProduct({ tags, titulo, valor, desconto, img}) {
                             <h2>{valor}</h2>
                         </div>
                         <p>{desconto}% OFF</p>
-                </div>
+                    </div>
                 
                 </div>
 
-                <button>Ver oferta</button>
+                <button onClick={handleClick}>Ver oferta</button>
             </div>
         </div>
     )

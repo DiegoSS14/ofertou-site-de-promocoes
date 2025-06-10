@@ -1,21 +1,23 @@
-.homeContainer{
+.productContainer{
     width: 100%;
+    min-height: calc(100vh - calc(160px + 80px));
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
 }
 
-.homeContainer section{
+.productContainer section{
     display: flex;
+    align-items: start;
     flex-direction: column;
     gap: 20px;
     width: 100%;
     max-width: 1200px;
 }
 
-.homeContainer section h2{
+.productContainer h2{
     font-size: 24px;
     color: #3F3F3F;
 }
