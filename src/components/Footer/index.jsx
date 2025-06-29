@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import "./footer.css";
-import Search from "../search";
 import logoNegativa from "../../assets/logo/ofertou-logo-negativo.svg";
 
 function Footer() {
