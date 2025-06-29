@@ -1,12 +1,14 @@
-# React + Vite
+ofertou-site-de-promocoes
+Esse é um site de promoções que consome uma API de produtos fictícios chamada DummyJson. O objetivo dessa plataforma é que as pessoas possam acessá-la, conferir as promoções e, se se interessarem, comprar.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A plataforma conta com um sistema de busca, uma home que exibe os produtos por categoria e um sistema de listas de favoritos.
 
-Currently, two official plugins are available:
+Interface
+Para tornar o projeto mais único, criei uma identidade visual base e uma interface do zero no Figma, facilitando o desenvolvimento de todos os componentes e o uso de cores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Como é um projeto pessoal e ainda estou aprendendo React, busquei criar uma interface que fosse bonita, moderna e simples ao mesmo tempo — porque não adiantaria criar um layout super complexo e não conseguir implementá-lo no código.
 
-## Expanding the ESLint configuration
+Interface do projeto no Figma
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Home Page
+Acabo de terminar a página Home com uma lógica que divide os produtos por categoria e exibe cada um em sua respectiva categoria e com botão de favorito nos cards, o próximo passo é implementar a lista de favoritos, a tela de exibição do produto, o sistema de listas e também o sistema de busca por nome. image
