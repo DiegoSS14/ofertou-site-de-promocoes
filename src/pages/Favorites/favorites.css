@@ -1,0 +1,3 @@
+.container-favorites{
+    min-height: calc(100vh - calc(80px + 160px));
+}

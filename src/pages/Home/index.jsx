@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./home.css"
 import { useEffect, useState } from "react";
 import api from "../../services/api";
@@ -51,6 +52,16 @@ function Home() {
             </section>
         </div>
     );
+=======
+import { ProductsHome } from '../../components/Products'
+
+function Home() {
+    return(
+        <div>
+            <ProductsHome/>
+        </div>
+    )
+>>>>>>> feat/home-page
 }
 
 export default Home;

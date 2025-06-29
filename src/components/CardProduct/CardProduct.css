@@ -1,7 +1,12 @@
 .img{
     width: 100%;
     max-width: 200px;
+<<<<<<< HEAD
     height: 200px;
+=======
+    height: 100%;
+    max-height: 300px;
+>>>>>>> feat/home-page
     background-color: rgb(231, 231, 231);
     border-radius: 10px 0 0 10px;
     object-fit: cover;
@@ -9,22 +14,55 @@
 
 .card-item{
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: auto;
+>>>>>>> feat/home-page
     display: flex;
     align-items: center;
 }
 
 .container-info{
+<<<<<<< HEAD
+=======
+    position: relative;
+>>>>>>> feat/home-page
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     height: 200px;
+=======
+    height: 100%;
+>>>>>>> feat/home-page
     padding: 30px;
     background-color: #fff;
     border-radius: 0 10px 10px 0;
     gap: 14px;
 }
 
+<<<<<<< HEAD
+=======
+.fav-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/icons/heart/favorite-disable.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.favorited-button{
+    background-image: url('../../assets/icons/heart/favorite-enable.svg');
+}
+
+>>>>>>> feat/home-page
 .container-variants{
     display: flex;
     flex-direction: column;
@@ -87,4 +125,36 @@
 
 .container-info button:hover{
     background-color: #239D45;
+<<<<<<< HEAD
+=======
+}
+
+@media(max-width: 540px) {
+
+    /* .area-tags{
+    flex-direction: column;
+    } */
+
+    .area-tags{
+        width: fit-content;
+    }
+
+    .img{
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    max-height: 300px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    }
+
+    .card-item{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+>>>>>>> feat/home-page
 }

@@ -1,5 +1,9 @@
 import RoutesApp from "./routes";
 import "./App.css"
+<<<<<<< HEAD
+=======
+import { ToastContainer } from "react-toastify";
+>>>>>>> feat/home-page
 
 function App() {
 
@@ -7,6 +11,10 @@ function App() {
     <>
       <div className="appContainer">
         <RoutesApp/>
+<<<<<<< HEAD
+=======
+        <ToastContainer/>
+>>>>>>> feat/home-page
       </div>
     </>
   )

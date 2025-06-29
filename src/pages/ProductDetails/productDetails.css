@@ -1,0 +1,97 @@
+.container-details{
+    width: 100%;
+    min-height: calc(100vh - calc(160px + 80px));
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.container-details section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.container-details img{
+    width: 40%;
+    height: fit-content;
+    background-color: rgb(230, 230, 230);
+    border-radius: 6px;
+}
+
+.prod-info{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prod-variants{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-details button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 35px; 
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+    background-color: #40B560;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.container-details button:hover{
+    background-color: #239D45;
+}
+
+.item-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-detail p{
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgb(104, 104, 104);
+}
+
+.item-detail h3{
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+
+.fav-mark{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/icons/heart/favorite-disable.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.favorited-mark{
+    background-image: url('../../assets/icons/heart/favorite-enable.svg');
+}
