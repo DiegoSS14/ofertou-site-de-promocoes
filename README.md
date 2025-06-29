@@ -1,14 +1,44 @@
-ofertou-site-de-promocoes
-Esse é um site de promoções que consome uma API de produtos fictícios chamada DummyJson. O objetivo dessa plataforma é que as pessoas possam acessá-la, conferir as promoções e, se se interessarem, comprar.
+ 🛍️ Ofertou – Site de Promoções
 
-A plataforma conta com um sistema de busca, uma home que exibe os produtos por categoria e um sistema de listas de favoritos.
+Ofertou é uma aplicação desenvolvida em **React.js** que consome a API fictícia [DummyJson](https://dummyjson.com/), simulando um site de promoções de produtos. O objetivo é oferecer uma experiência simples, funcional e agradável para quem quer explorar ofertas e encontrar produtos com facilidade.
 
-Interface
-Para tornar o projeto mais único, criei uma identidade visual base e uma interface do zero no Figma, facilitando o desenvolvimento de todos os componentes e o uso de cores.
+🔗 **Acesse o projeto:**  
+[https://ofertou-site-de-promocoes-1osf.vercel.app/](https://ofertou-site-de-promocoes-1osf.vercel.app/)
 
-Como é um projeto pessoal e ainda estou aprendendo React, busquei criar uma interface que fosse bonita, moderna e simples ao mesmo tempo — porque não adiantaria criar um layout super complexo e não conseguir implementá-lo no código.
+---
 
-Interface do projeto no Figma
+## ✨ Funcionalidades
 
-Home Page
-Acabo de terminar a página Home com uma lógica que divide os produtos por categoria e exibe cada um em sua respectiva categoria e com botão de favorito nos cards, o próximo passo é implementar a lista de favoritos, a tela de exibição do produto, o sistema de listas e também o sistema de busca por nome. image
+- 🔎 Busca por **nome** e **tags** dos produtos  
+- 🏠 Home com produtos exibidos por **categoria**  
+- ⭐ Sistema de **favoritos**  
+- 📄 Visualização da **descrição completa** do produto
+
+---
+
+## 🖼️ Interface
+
+A interface foi criada do zero no Figma com uma identidade visual própria, buscando um equilíbrio entre estética e simplicidade para facilitar o desenvolvimento e a experiência do usuário.
+
+> _"Como ainda estou aprendendo React, optei por um layout moderno, funcional e de fácil implementação."_
+
+![Projeto no figma](image.png)
+
+---
+
+### 📷 Imagens da interface:
+![Home](image-2.png)
+![Favorites](image-3.png)
+![Search](image-4.png)
+![Product details](image-5.png)
+
+### 🎬 GIFs com interações:
+![Demonstração do site](ofertou-site.gif)
+
+---
+
+## 📬 Contato
+
+Feito com ❤️ por Diego Sousa 
+🔗 [Linkedin](https://www.linkedin.com/in/diego-sousa-4b2295188/)
+🔗 [Meu portfólio de designer](https://www.behance.net/diegosousa8)
