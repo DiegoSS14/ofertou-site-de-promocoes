@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import "./CardProduct.css"
 import { useNavigate } from "react-router-dom"
 
+
 function CardProduct({ tags, titulo, valor, desconto, img, onToggleFavorite, isFavorited, id}) {
     
+    const notify = () => toast("Produto adicionado!")
+
     const [favorited, setFavorited] = useState(false);
     const navigate = useNavigate();
 

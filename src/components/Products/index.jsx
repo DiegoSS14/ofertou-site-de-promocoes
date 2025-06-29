@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import api from "../../services/api";
 import CardProduct from "../../components/CardProduct";
+import { toast } from "react-toastify";
 
 function ProductsHome() {
+
+    const [loading, setLoading] = useState(true)
 
     const [products, setProducts] = useState([]);
     const [productsByCategory, setProductsByCategory] = useState([]);
@@ -54,21 +57,32 @@ function ProductsHome() {
 
             setProducts(response.data.products);
             setProductsByCategory(limiteGroupProducts);
+            setLoading(false)
         }
-
+        
         loadPorducts();
     }, [])
 
     function toggleFavorite(produto) {
         setFavoriteList(prevList => {
-            const exists = prevList.some(item => item.title === produto.title)
+            const exists = prevList.some(item => item.id === produto.id)
 
             if (exists) {
-                return prevList.filter(item => item.title !== produto.title);
+                toast(`${produto.title} removido dos favoritos!`);
+                return prevList.filter(item => item.id !== produto.id);
             } else {
+                toast(`${produto.title} adicionado aos favoritos!`);
                 return [...prevList, produto];
             }
         });
+    }
+
+    if(loading) {
+        return(
+            <div className="productContainer">
+                <h2>Loading...</h2>
+            </div>
+        )
     }
 
     return (
@@ -89,7 +103,7 @@ function ProductsHome() {
                                     img={prod.thumbnail}
 
                                     onToggleFavorite={() => toggleFavorite(prod)}
-                                    isFavorited={favoriteList.some(item => item.title === prod.title)}
+                                    isFavorited={favoriteList.some(item => item.id === prod.id)}
                                 />
                             )
                             )}
@@ -99,11 +113,14 @@ function ProductsHome() {
             })}
         </div>
     );
+
 }
 
 
 // Produtos da pesquisa
 function ProductsSearch() {
+
+    const [loading, setLoading] = useState(true)
 
     const [products, setProducts] = useState([]);
     const [searchParams] = useSearchParams();
@@ -133,6 +150,7 @@ function ProductsSearch() {
         }
 
         loadPorducts();
+        setLoading(false);
     }, [searchTerm]) // Agora o useEffect irá atualizar toda vez que o termo de busca mudar.
 
     function toggleFavorite(produto) {
@@ -140,11 +158,21 @@ function ProductsSearch() {
             const exists = prevList.some(item => item.id === produto.id)
 
             if (exists) {
+                toast(`${produto.title} removido dos favoritos!`);
                 return prevList.filter(item => item.id !== produto.id);
             } else {
+                toast(`${produto.title} adicionado aos favoritos!`);
                 return [...prevList, produto];
             }
         });
+    }
+
+    if(loading) {
+        return(
+            <div className="productContainer">
+                <h2>Loading...</h2>
+            </div>
+        )
     }
 
     return (
@@ -189,8 +217,10 @@ function ProductsFavorites() {
             const exists = prevList.some(item => item.id === produto.id)
 
             if (exists) {
+                toast(`${produto.title} removido dos favoritos!`);
                 return prevList.filter(item => item.id !== produto.id);
             } else {
+                toast(`${produto.title} adicionado aos favoritos!`);
                 return [...prevList, produto];
             }
         });
