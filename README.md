@@ -22,20 +22,20 @@ A interface foi criada do zero no Figma com uma identidade visual própria, busc
 
 > _"Como ainda estou aprendendo React, optei por um layout moderno, funcional e de fácil implementação."_
 
-![Projeto no Figma](./assets/images/image.png)
+![Projeto no Figma](https://github.com/user-attachments/assets/02d34709-ae0d-4074-8af7-3236f8f0fa9b)
+
+
 
 ---
 
 ### 📷 Imagens da interface:
 
-![Home](./assets/images/image-2.png)  
-![Favorites](./assets/images/image-3.png)  
-![Search](./assets/images/image-4.png)  
-![Product Details](./assets/images/image-5.png)
+![Home](https://github.com/user-attachments/assets/5e225b4d-9bdb-4583-bf13-cbb8c2cba6f6)
+![Favorites](https://github.com/user-attachments/assets/b266dbd1-b973-4e58-8997-054517770f60)
+![Search](https://github.com/user-attachments/assets/9398e06c-e37f-47ff-8a35-b36e13b53bcf)
+![Product details](https://github.com/user-attachments/assets/5769e30d-bef7-4d7c-97eb-24edb9faebd2)
 
-### 🎬 GIF com interações:
 
-![Demonstração do site](./assets/images/ofertou-site.gif)
 
 ---
 
